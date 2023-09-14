@@ -1,4 +1,13 @@
+<h1>API para CRUD Mysql e autenticação</h1>
+
+<h3>
+API utilizando laravel 10 com CRUD para banco de dados Mysql e autenticação de usuário usando Sanctum.
+
 Curso: https://www.youtube.com/playlist?list=PLyugqHiq-SKdFqLIM3HgCAnG8_7wUqHMm
+</h3>
+
+
+
 
 Pré-requisitos: PHP 8.1, Composer e Mysql instalados
 
@@ -20,30 +29,30 @@ Pré-requisitos: PHP 8.1, Composer e Mysql instalados
     php artisan migrate
 
 7. Caso necessário popular as tabelas com dados aleatórios, modificar os arquivos de cada tabela em /database/factories/
-   e adicionar em /database/seeders/DatabaseSeeder.php o comando com a quantidade de resgistro a serem gerados em cada tabela;
+   e adicionar em /database/seeders/DatabaseSeeder.php o comando com a quantidade de registros a serem gerados em cada tabela;
 
-8. Executar o comando para criar os registros:
+8. Executar o comando para criar os registros: 
     php artisan db:seed
 
-9. Criar o arquivo controle com os métodos CRUD de cada tabela:
+9. Criar o arquivo controller com os métodos CRUD de cada tabela: 
     php artisan make:controller Api/V1/InvoiceController --resource
 
 10. Em /app/Http/Controllers modificar os métodos criados para o CRUD;
 
 11. Em /routes/api.php definir as rotas para cada método;
 
-12. Caso necessário formatar o retorno das informações no banco, criar os arquivos resource para cada tabela:
+12. Criar os arquivos resource para formatar o retorno do database:
     php artisan make:resource V1/UserResource
+    
+13. Modificar o arquivo resource dentro do diretório /app/Http/Resources caso necessário;
 
-12.1. Modificar o arquivo resource na tabela /app/Http/Resources;
-
-13. Caso precise recriar as tabelas, executar o comando:
+14. Caso precise recriar as tabelas, executar o comando:
         php artisan migrate:fresh
 
     ou adicione -seed ao final para recriar com os registros aleatórios:
         php artisan migrate:fresh --seed
 
-14. Iniciar o server para testar no navegador:
+15. Iniciar o server para testar no navegador:
     php artisan serve
 
 
