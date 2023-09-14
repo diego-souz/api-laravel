@@ -1,13 +1,10 @@
-<h1>API para CRUD Mysql e autenticação</h1>
+<h1>API CRUD LARAVEL 10/Mysql com autenticação</h1>
 
-<h3>
+<h4>
 API utilizando laravel 10 com CRUD para banco de dados Mysql e autenticação de usuário usando Sanctum.
+</h4>
 
 Curso: https://www.youtube.com/playlist?list=PLyugqHiq-SKdFqLIM3HgCAnG8_7wUqHMm
-</h3>
-
-
-
 
 Pré-requisitos: PHP 8.1, Composer e Mysql instalados
 
