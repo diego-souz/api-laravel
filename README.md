@@ -52,5 +52,11 @@ Pré-requisitos: PHP 8.1, Composer e Mysql instalados
 15. Iniciar o server para testar no navegador:
     php artisan serve
 
+16. Traduzir laravel para PT-br: 
+    https://github.com/lucascudo/laravel-pt-BR-localization
+
+17. Para padronizar o formato Json para sucesso e falha, criar os arquivos HttpResponse em /app/Traits
+
+18. Para realizar filtros no get, adicionar em /app/Filters/ as regras de filtros permitidos
 
 
